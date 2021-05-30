@@ -70,7 +70,7 @@ M_List = [M_start]
 history_list = ['']
 
 for i in range(N):
-    print("Checking all matrices that can be generated with " + str(i) + " moves...")
+    print("Checking all matrices that can be generated with " + str(i+1) + " moves...")
     M_List, history_list = generate_next_move(M_List,history_list)
     if isinstance(M_List,list):
         print("No solution was found.")
